@@ -1,0 +1,45 @@
+git --version || git -v : ver la versión de git
+
+*Comandos básicos de la terminal
+ls - listar 
+cd - cambiar directorio
+cd.. - regresar
+pwd - ruta
+clear - limpiar la terminal/consola
+mkdir - crear una carpeta
+code . - abrir proyecto de una carpeta
+touch namefichero - crear ficheros
+
+*Configuración de Git
+git config --global user.name "bryan"
+git config --global user.email "gironbravo@gmail.com"
+
+
+*Ramas en Git
+los estados de los archivos en Git:
+-Untracked (U): Archivos que están en el directorio de trabajo pero no han sido añadidos al índice (staging area) de Git. Git no está rastreando estos archivos, por lo que no están en el repositorio.
+-Tracked: Archivos que han sido añadidos al índice y están bajo el control de versiones de Git. Estos pueden estar en uno de los siguientes estados:
+    -Modified (M): Archivos que han sido modificados desde la última confirmación (commit).
+    Staged (S): Archivos que están preparados para ser confirmados.
+    Committed (C): Archivos que han sido confirmados y están en el repositorio.
+Modified, Staged, Committed : Modificada, Preparado, Comprometido
+
+git init
+git branch -m main
+git status - ver estado de los archivos
+git add - preparar archivo para ser confirmado(commit)
+git commit -m : una forma de agregar un mensaje
+git log - imprimir mensaje de los commit agregados
+git checkout -  se usa para cambiar entre ramas o restaurar archivos
+git reset - se usa para deshacer commits y puede alterar el estado de tu repositorio
+git reset --soft HEAD~1: Deshace el último commit pero mantiene los cambios.
+git reset --hard HEAD~1: Deshace el último commit y elimina los cambios.
+git log --graph
+git log --graph --pretty=oneline
+git log --graph --decorate --all --oneline
+git alias ----> git config --global alias.tree "git log --graph --pretty=oneline"
+touch gitignore  **/nameficheroIgnore- añadir ficheros que no se tome en cuenta
+git diff -- 
+
+*Desplazamieto en una rama
+git 
